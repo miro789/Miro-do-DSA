@@ -15,14 +15,14 @@ class Solution:
         res = []
 
         def dfs(root: Optional[TreeNode], path: List[str]):
-            if root is None:
+            if not root:
                 return
             
             # Append the current node's val to the path
             path.append(str(root.val))
 
             # if the current node has no children >> add the path to the result
-            if root.left is None and root.right is None:
+            if not root.left and not root.right:
                 res.append("->".join(path))
             
             # recursive visit each child
@@ -36,7 +36,7 @@ class Solution:
         return res
 ```
 
-#### 2. Ternay Tree Path (> 2 nodes)
+#### 2. Ternay Tree Path (or > 2 nodes)
 
 ```python
 from typing import List
@@ -52,7 +52,7 @@ def ternary_tree_paths(root: Node) -> List[str]:
     res = []
     
     def dfs(node: Node, path: List[str]):
-        if node is None:
+        if not node:
             return
         
         # Append the current node's value to the path
