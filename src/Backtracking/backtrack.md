@@ -1,6 +1,6 @@
-## Tree Path
+## 1. Backtracking = DFS on Tree
 
-#### 1. Binary Tree Paths
+#### 1.1 Binary Tree Paths
 
 ```python
 # Definition for a binary tree node.
@@ -36,7 +36,7 @@ class Solution:
         return res
 ```
 
-#### 2. Ternay Tree Path (or > 2 nodes)
+#### 1.2 Ternay Tree Path (or > 2 nodes)
 
 ```python
 from typing import List
