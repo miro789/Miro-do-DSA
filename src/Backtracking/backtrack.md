@@ -65,7 +65,7 @@ def ternary_tree_paths(root: Node) -> List[str]:
         # Recursively visit each child
         for child in node.children:
             if child:
-                dfs(child, path)
+            dfs(child, path)
         
         # Backtrack: remove the current node's value from the path
         path.pop()
